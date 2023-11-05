@@ -1,0 +1,39 @@
+body {
+    background-color: #80685c;
+    margin: 0;
+    color: #332823;
+}
+
+.center {
+    text-align: center;
+}
+
+p {
+    background-color: #b37b5d;
+}
+
+.margin-80 {
+    margin: 80px;
+}
+
+.padding-80 {
+    padding: 80px;
+}
+
+.border-20 {
+    border: 20px solid #332823;
+}
+
+.p-sem-background {
+    background-color: transparent;
+}
+
+a {
+    color: #332823;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e68049;
+    background-color: #4c4743;
+}
