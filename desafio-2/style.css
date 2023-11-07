@@ -13,7 +13,7 @@ body {
 }
 
 .div-cabecalho {
-    margin: 100px auto 0 auto;
+    margin: 300px auto 0 auto;
     width: 80%;
     text-align: center;
 }
@@ -86,10 +86,20 @@ main header {
     text-align: center;
 }
 
+.texto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+
+
 
 /* footer  */
 footer {
     background-color: blue;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
 }
