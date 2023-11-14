@@ -141,7 +141,7 @@ ul{
 }
 
 
-.trailer_botao{
+.trailer_botao, .trailer_botao2{
     display: inline-block;
     margin-top: 1em;
     padding: 1em 2em;
@@ -152,8 +152,7 @@ ul{
     text-transform: uppercase;
 }
 
-
-.trailer_botao:hover{
+.trailer_botao:hover, .trailer_botao2:hover{
     background-color: color-mix(in srgb, var(--cor-site), #ffffff 20%);
 }
 
