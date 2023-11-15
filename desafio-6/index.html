@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="number" name="entrada" id="txt1" class="text">
+    <input type="number" name="entrada" id="txt2" class="text">
+    <input type="button" value="+" id="btnSomar" class="text">
+    <input type="button" value="-" id="btnDiminuir" class="text">
+    <input type="button" value="/" id="btnDividir" class="text">
+    <input type="button" value="*" id="btnMultiplicar" class="text">
+    <button id="limpar">Limpar</button>
+
+    <div id="resultado">Resultado</div>
+
+    <script>
+        var btnSomar = document.getElementById('btnSomar');
+        btnSomar.addEventListener('click', somar);
+
+        var btnDiminuir = document.getElementById('btnDiminuir');
+        btnDiminuir.addEventListener('click', diminuir);
+
+        var btnDividir = document.getElementById('btnDividir');
+        btnDividir.addEventListener('click', dividir);
+
+        var btnMultiplicar = document.getElementById('btnMultiplicar');
+        btnMultiplicar.addEventListener('click', multiplicar);
+
+        var c1 = document.getElementById('txt1');
+        var c2 = document.getElementById('txt2');
+        var result = document.getElementById('resultado');
+
+        function somar(){
+            var num1 = parseFloat(c1.value);
+            var num2 = parseFloat(c2.value);
+            
+            var resultado = num1 + num2;
+            result.innerText = "A soma é " + resultado;
+        } 
+
+        function diminuir(){
+            var num1 = parseFloat(c1.value);
+            var num2 = parseFloat(c2.value);
+            
+            var resultado = num1 - num2;
+            result.innerText = "A subtração é " + resultado;
+        } 
+
+        function dividir(){
+            var num1 = parseFloat(c1.value);
+            var num2 = parseFloat(c2.value);
+            
+            var resultado = num1 / num2;
+            result.innerText = "A divisão é " + resultado;
+        } 
+
+        function multiplicar(){
+            var num1 = parseFloat(c1.value);
+            var num2 = parseFloat(c2.value);
+            
+            var resultado = num1 * num2;
+            result.innerText = "A multiplicação é " + resultado;
+        } 
+
+        document.getElementById("limpar").addEventListener("click", function() {
+  clearInputUrlNumberText("entrada");
+});
+
+function clearInputUrlNumberText(name) {
+  var entradas = document.querySelectorAll("input[name='"+name+"']");
+  [].map.call(entradas, entrada => entrada.value = '');
+}
+
+
+    </script>
+
+</body>
+</html>
