@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="number" name="entrada" id="txt1" class="text">
-    <input type="number" name="entrada" id="txt2" class="text">
-    <input type="button" value="+" id="btnSomar" class="text">
-    <input type="button" value="-" id="btnDiminuir" class="text">
-    <input type="button" value="/" id="btnDividir" class="text">
-    <input type="button" value="*" id="btnMultiplicar" class="text">
-    <button id="limpar">Limpar</button>
+    <main>
+        <input type="number" name="entrada" id="txt1" class="text inp">
+        <input type="number" name="entrada" id="txt2" class="text inp">
+        <input type="button" value="+" id="btnSomar" class="text btn">
+        <input type="button" value="-" id="btnDiminuir" class="text btn">
+        <input type="button" value="/" id="btnDividir" class="text btn">
+        <input type="button" value="*" id="btnMultiplicar" class="text btn">
+        <button id="limpar" class="btn">Limpar</button>
 
-    <div id="resultado">Resultado</div>
+        <div id="resultado">Resultado</div>
+    </main>
 
     <script>
         var btnSomar = document.getElementById('btnSomar');
@@ -67,12 +69,11 @@
         } 
 
         document.getElementById("limpar").addEventListener("click", function() {
-  clearInputUrlNumberText("entrada");
-});
+        clearInputUrlNumberText("entrada");});
 
-function clearInputUrlNumberText(name) {
-  var entradas = document.querySelectorAll("input[name='"+name+"']");
-  [].map.call(entradas, entrada => entrada.value = '');
+        function clearInputUrlNumberText(name) {
+        var entradas = document.querySelectorAll("input[name='"+name+"']");
+        [].map.call(entradas, entrada => entrada.value = '');
 }
 
 
