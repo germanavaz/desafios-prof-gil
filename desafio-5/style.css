@@ -1,0 +1,10 @@
+body, html {
+    margin: 0;
+    background-color: wheat;
+}
+
+h1 {
+    width: 100vw;
+    text-align: center;
+    margin: 20rem auto;
+}
