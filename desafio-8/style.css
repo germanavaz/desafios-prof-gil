@@ -10,8 +10,8 @@ body, html {
 }
 
 .header-logo {
-    width: 8em;
-    padding-top: .3em;
+    width: 5em;
+    padding: .8em;
 }
 
 .header-nav {
