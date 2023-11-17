@@ -5,11 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stardew Valley - Desafio 7</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="shortcut icon" href="imagens/icon.png" type="image/x-icon">
 </head>
 <body>
 
     <header class="header">
-        <img src="" alt="" class="header-logo">
+        <img src="imagens/logo.png" alt="" class="header-logo">
+
+
+        <span id="hamburguer" class="material-symbols-rounded">
+            menu
+            </span>
 
         <nav id="itens-menu" class="header-nav">
             <ul>
@@ -20,6 +29,43 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section class="fundo"></section>
+    </main>
+
+    <footer>
+        <div class="divpai">
+            <div> <a href="http://" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-whatsapp" class="div-icon"></ion-icon></a></div>
+
+            <div><a href="http://" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook" class="div-icon"></ion-icon> </a></div>
+
+            <div> <a href="http://" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram" class="div-icon"></ion-icon></a></div>
+
+            <div><a href="http://" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin" class="div-icon"></ion-icon> </a></div>
+
+            <div> <a href="http://" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-github" class="div-icon"></ion-icon></a></div>
+        </div>
+
+        <p>Feito com 🧡 por <a href="https://www.linkedin.com/in/germana-vaz/" target="_blank" rel="noopener noreferrer">Germana Maria Vaz </a></p>
+        <p>  Desafio proposto por <a href="https://www.linkedin.com/in/gilchaves/" target="_blank" rel="noopener noreferrer">Profª. Gil Chaves</a> e monitoras <a href="https://www.linkedin.com/in/erika-a-s-silva-frontend/" target="_blank" rel="noopener noreferrer">Erika de Araújo</a> e  <a href="https://www.linkedin.com/in/vanessa-mainara/" target="_blank" rel="noopener noreferrer">Vanessa Mainara</a> no Bootcamp Elas na Tech</p>
+    </footer>
     
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        var hamburguer = document.getElementById('hamburguer');
+        var itens_menu = document.getElementById('itens-menu');
+
+        hamburguer.addEventListener('click', aparecer);
+
+        function aparecer(){
+            if(itens_menu.style.display == 'block') {
+                itens_menu.classList.remove('show');
+            } else {
+                itens_menu.classList.toggle('show');
+            }
+        }
+    </script>
 </body>
 </html>
