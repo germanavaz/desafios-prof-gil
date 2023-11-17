@@ -16,3 +16,15 @@ h1 {
 
 }
 
+footer{
+    background-color: #0d0d0d;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+footer a {
+    color: #d2d2d2;
+    text-decoration: none;
+}
+
